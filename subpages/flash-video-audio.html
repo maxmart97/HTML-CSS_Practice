@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS Practice - Flash, Video, and Audio</title>
+
+    <!-- SWFObject Script -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <!-- Flash Movie (.swf) -->
+    <script type="text/javascript">swfobject.embedSWF("../miscellaneous/bird.swf", "test1", "400", "300", "8.0.0");</script>
+
+    <!-- Flash Video (.flv) -->
+    <script type="text/javascript">
+        var flashvars = {};
+        var params = { movie:"../miscellaneous/puppy.flv" };
+        swfobject.embedSWF("../miscellaneous/osplayer.swf", "test2", "400", "300", "8.0.0", flashvars, params);
+    </script>
+
+    <!-- Flash MP3 Player -->
+    <script type="text/javascript">
+        var flashvars = {};
+        var params = { mp3: "../miscellaneous/test-audio.mp3" };
+        swfobject.embedSWF("../miscellaneous/player_mp3_1.0.0.swf", "music-player", "200", "20", "8.0.0", flashvars, params);
+    </script>
+</head>
+<body>
+    <h1 style="color:violet"><b>Flash, Video, and Audio</b></h1>
+    <h2><a href="../index.html">Home</a></h2>
+    <hr />
+
+    <h1>Flash Movie (.swf)</h1>
+        <div id="test1">
+            <p>This text appears if the flash movie does not work.</p>
+        </div>
+    <hr/>
+
+    <h1>Flash Video (.flv)</h1>
+        <div id="test2">
+            <p>This text appears if the flash video does not work.</p>
+        </div>
+    <hr />
+
+    <h1>HTML 5: Video</h1>
+    <video src="../miscellaneous/puppy.mp4" poster="../miscellaneous/puppy.jpg" width="400"
+               height="300" controls loop preload="auto"> <!-- Can also add 'autoplay' -->
+        <p>This text appears if the video does not work.</p>
+    </video>
+    <hr />
+
+    <h1>HTML 5: Video with multiple sources (replaces 'src' attribute of video tag)</h1>
+    <video width="400" height="300" controls loop preload="auto"> <!-- Can also add 'autoplay' -->
+        <source src="../miscellaneous/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="../miscellaneous/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+        <p>This text appears if either video source does not work.</p>
+    </video>
+    <hr />
+
+    <h1>Flash MP3 Player</h1>
+    <div id="music-player">
+        <p>This text appears if the flash mp3 player does not work.</p>
+    </div>
+    <hr />
+
+    <h1>HTML 5: Audio</h1>
+    <audio src="../miscellaneous/test-audio.ogg" controls preload="auto" loop> <!-- Can also add 'autoplay' -->
+        <p>This text appears if the audio element doesn't work.</p>
+    </audio>
+    <hr />
+
+    <h1>HTML 5: Audio with multiple sources (replaces 'src' attribute of audio tag)</h1>
+    <audio controls preload="auto" loop>
+        <source src="../miscellaneous/test-audio.ogg" />
+        <source src="../miscellaneous/test-audio.mp3" />
+        <p>This text appears if the audio does not work.</p>
+    </audio>
+    <hr />
+    <h2><a href="../index.html">Home</a></h2>
+</body>
+</html>
