@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Introduction</title>
+</head>
+<body>
+    <h1 style="color:purple"><b>INTRODUCTION TO CSS</b></h1>
+    <h2><a href="../index.html">Home</a></h2>
+    <hr/>
+    <h1>External CSS</h1>
+    <p>To link to an external css stylesheet, put this in the head:<br />
+    <pre style="padding: 2em 2em 2em 5em; color: red;"><b>&lt;link href="filepath" type="text/css" rel="stylesheet"/&gt;</b></pre>
+    </p>
+    <hr/>
+    <h1>Internal CSS</h1>
+    <p>To use internal css, you have multiple options:</p>
+    <ul>
+        <li>Add to the head:
+            <pre style="padding: 2em 2em 2em 5em; color: red;"><b>&lt;style type="text/css"&gt;<br/><br/>&Tab;selector {<br/>&Tab;&nbsp;&nbsp;&nbsp;property: value;<br>&Tab;}<br/><br/>&lt;/style&gt;</b></pre>
+        </li>
+        <li>Add as an attribute to an element:
+            <pre style="padding: 2em 2em 2em 5em; color: red;"><b>&lt;p style="property: value;"&gt;Some text here&lt;/&gt;</b></pre>
+        </li>
+    </ul>
+    <hr />
+    <h1>CSS Selectors</h1>
+    <ul>
+        <li>Universal Selector (Targets all elements on the page):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>* {}</b></pre></li>
+        <li>Type Selector (Targets all elements of selected type):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>h1, h2, h3, p {}</b></pre></li>
+        <li>Class Selector (Targets all elements of specific className or only specific elements with a specific className):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>.className {}, element.className {}</b></pre></li>
+        <li>ID Selector (Targets element with specific ID):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>#idValue {}</b></pre></li>
+        <li>Child Selector (Targets all occurrences of element2 that are children of element1)
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>element1>element2 {}, ex: p>a {}</b></pre></li>
+        <li>Descendant Selector (Targets any element2s that sit inside element1; element2s do not have to be direct children):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>element1 element2 {}, ex: p a {}</b></pre></li>
+        <li>Adjacent Sibling Selector (Targets first occurrence of element2 after any occurrence of element1):
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>element1+element2 {}, ex: h1+p {}</b></pre></li>
+        <li>General Sibling Selector (Targets any element2s that are siblings of element1)
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>element1~element2 {}, ex: h1~p {}</b></pre></li>
+    </ul>
+    <hr />
+    <h1>Cascading Rules</h1>
+    <ul>
+        <li>Identical selectors: Last selector takes precedence (color will be <span style="color: green">green</span> not <span style="color: blue">blue</span>).
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>i {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: blue;<br>&Tab;}<br/><br/>&Tab;i {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: green;<br>&Tab;}</b></pre></li>
+        <li>Specificity: The most specific selector takes precedence. Ex: h1 is more specific than *. If h1 has a rule that is the same as
+            a rule inside of *, the rule that h1 follows is the one inside h1.
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>* {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: blue;<br>&Tab;}<br/><br/>&Tab;h1 {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: green;<br>&Tab;}</b></pre></li>
+        <li>Importance: You can add "!important" after any value in a rule to say that this rule should be considered more important than other
+            equal rules that apply to the same element.
+            <pre style="padding: 2em 2em 2em 5em; color: red;">&Tab;<b>i {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: blue;<br>&Tab;}<br/><br/>&Tab;i {<br/>&Tab;&nbsp;&nbsp;&nbsp;color: green !important;<br>&Tab;}</b></pre></li>
+    </ul>
+    <hr />
+    <h1>Inheritance</h1>
+    <p>All rules applied to parent elements also apply to their children elements unless overridden.</p>
+    <hr />
+    <h2><a href="../index.html">Home</a></h2>
+</body>
+</html>
