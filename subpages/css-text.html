@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Text</title>
+    <link href="../css/css-text.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1 style="color:red"><b>TEXT</b></h1>
+<h2><a href="../index.html">Home</a></h2>
+<hr/>
+<h1>Font-Family</h1>
+<p class="font-family">Font family allows you to specify the type of font or font stack you want the text to have.</p>
+<hr />
+<h1>Font-Size</h1>
+<p>By default, browsers set text size to 16 pixels. The font-size property allows you to specify the size of text.</p>
+<p class="font-size-px"> This text uses <b>pixels</b> to specify size.</p>
+<p class="font-size-pct">This text uses <b>percent</b> to specify size.</p>
+<p class="font-size-em">This text us <b>ems</b> to specify size.</p>
+<hr />
+<h1>@Font-Face</h1>
+<p>You can add external fonts by using the @font-face property. Requires a src property that includes url(/path) and format('formatType').</p>
+<p class="font-face">This text uses the @font-face property with a downloaded font from www.fontsquirrel.com.</p>
+<hr />
+<h1>Font-Weight</h1>
+<p>The font-weight property allows you to create bold text or turn off bold text.</p>
+<ul>
+    <li class="font-weight-bold">This text is bold.</li>
+    <li class="font-weight-normal">This text is normal.</li>
+</ul>
+<hr />
+<h1>Font-Style</h1>
+<p>The font-style property allows you to italicize, oblique, or de-italicize/de-oblique text.</p>
+<ul>
+    <li class="font-style-italic">This text is italicized.</li>
+    <li class="font-style-oblique">This text is oblique.</li>
+</ul>
+<hr />
+<h1>Text-Transform</h1>
+<p>The text-transform property allows you to make all text uppercase, lowercase, or the first letter of every word capitalized.</p>
+<ul>
+    <li class="text-transform-upper">This text has been transformed to all uppercase.</li>
+    <li class="text-transform-lower">THIS TEXT HAS BEEN TRANSFORMED TO ALL LOWERCASE.</li>
+    <li class="text-transform-cap">this text has been transformed to have the first letter of each word capitalized.</li>
+</ul>
+<hr />
+<h1>Text-Decoration</h1>
+<p>The text-decoration property allows you to remove decoration or add an underline, overline, or line-through.</p>
+<ul>
+    <li><a class="text-decoration-none" href="https://www.google.com">This text, a link, would normally have text decoration (an underline).</a></li>
+    <li class="text-decoration-underline">This text has an underline.</li>
+    <li class="text-decoration-line-through">This text has a line through it..</li>
+    <li class="text-decoration-overline">This text has an overline.</li>
+</ul>
+<h1>Line-Height</h1>
+<p>Increasing the line-height makes the vertical gap between lines larger. The gap is measured above each line.</p>
+<p class="line-height">Some text some text some text some text some text Some text some text some text some text some text Some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+    Some text some text some text some text some text Some text some text some text some text some text Some text some text some text some text some text
+</p>
+<hr/>
+<h1>Letter-Spacing and Word-Spacing</h1>
+<p>The letter-spacing attribute allows you to change how close the letters are together. The word-spacing attribute allows you to
+    change how close the words are together.
+</p>
+<ul>
+    <li class="letter-spacing">This text has very wide letter spacing.</li>
+    <li class="word-spacing">This text has very wide word spacing.</li>
+</ul>
+<hr/>
+<h1>Text-align</h1>
+<p>Text can be aligned to the left, center, or right. Text can also be justified.</p>
+<ul>
+    <li class="text-align-left">
+        This text is left aligned. This text is left aligned. This text is left aligned. This text is left aligned.
+        This text is left aligned. This text is left aligned. This text is left aligned. This text is left aligned.
+        This text is left aligned. This text is left aligned. This text is left aligned. This text is left aligned.
+        This text is left aligned. This text is left aligned. This text is left aligned. This text is left aligned.
+    </li><br/>
+    <li class="text-align-right">
+        This text is right aligned. This text is right aligned. This text is right aligned. This text is right aligned.
+        This text is right aligned. This text is right aligned. This text is right aligned. This text is right aligned.
+        This text is right aligned. This text is right aligned. This text is right aligned. This text is right aligned.
+        This text is right aligned. This text is right aligned. This text is right aligned. This text is right aligned.
+    </li><br/>
+    <li class="text-align-center">
+        This text is center aligned. This text is center aligned. This text is center aligned. This text is center aligned.
+        This text is center aligned. This text is center aligned. This text is center aligned. This text is center aligned.
+        This text is center aligned. This text is center aligned. This text is center aligned. This text is center aligned.
+        This text is center aligned. This text is center aligned. This text is center aligned. This text is center aligned.
+    </li><br/>
+    <li class="text-align-justify">
+        This text is justified. This text is justified. This text is justified. This text is justified.
+        This text is justified. This text is justified. This text is justified. This text is justified.
+        This text is justified. This text is justified. This text is justified. This text is justified.
+        This text is justified. This text is justified. This text is justified. This text is justified.
+        This text is justified. This text is justified. This text is justified. This text is justified.
+    </li>
+</ul>
+<hr/>
+<h1>Vertical-Align</h1>
+<p>Vertical alignment is most commonly used with inline elements. The vertical align property determines how the text
+    aligns vertically next to another inline element.</p>
+<ul>
+    <li><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-baseline">baseline</span></li><br/>
+    <li><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-sub">sub</span></li><br/>
+    <li><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-super">super</span></li><br/>
+    <li ><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-top">top</span></li><br/>
+    <li ><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-text-top">text-top</span></li><br/>
+    <li ><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-middle">middle</span></li><br/>
+    <li ><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-bottom">bottom</span></li><br/>
+    <li ><a style="font-size: 36px" href="https://www.google.com">Google.com</a><span class="vertical-align-text-bottom">text-bottom</span></li><br/>
+</ul>
+<hr />
+<h1>Text-Indent</h1>
+<p class="text-indent">This text has been indented by 50px.</p>
+<hr />
+<h1>Text-Shadow</h1>
+<p class="text-shadow">This text has a text shadow. Text shadow has four values:</p>
+<ol>
+    <li>Left or right shift length in pixels.</li>
+    <li>Top or bottom shadow distance in pixels.</li>
+    <li>Blur amount applied to shawdow in pixels (optional).</li>
+    <li>Color of shadow.</li>
+</ol>
+<hr/>
+<h1>Pseudo-Elements</h1>
+<h2>:first-letter</h2>
+<p id="firstLetter">The first letter of this text has been changed.</p>
+<h2>:first-line</h2>
+<p id="firstLine">The first line of this text has been changed. The first line of this text has been changed. The first line of this text has been changed.
+    The first line of this text has been changed. The first line of this text has been changed. The first line of this text has been changed.
+    The first line of this text has been changed. The first line of this text has been changed. The first line of this text has been changed.
+</p>
+<h2>:link</h2>
+<p>When a link HAS NOT been visited, it has default text settings. Normally, non-visited links are blue and underlined.
+    <a href="https://www.google.com" id="link">This can be adjusted with the :link pseudo-element in css.</a>
+</p>
+<h2>:visited</h2>
+<p>When a link HAS been visited, it has default text settings. Normally, visited links are purple and underlined.
+    <a href="https://www.yahoo.com" id="visited">This link's default settings have been changed.</a>
+</p>
+<h2>:hover</h2>
+<p id="hover">Hovering over this text will add a background color.</p>
+<h2>:active</h2>
+<p>Clicking this button will change the background color.<input type="button" id="active" value="Click this button"></p>
+</body>
+<h2>:focus</h2>
+<p>When this textbox has focus, the background color will change. <input type="text" id="focus"/></p>
+</html>
