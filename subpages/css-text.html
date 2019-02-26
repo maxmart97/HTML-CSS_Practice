@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>CSS - Text</title>
     <link href="../css/css-text.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/home-button.css" type="text/css">
 </head>
 <body>
 <h1 style="color:red"><b>TEXT</b></h1>
-<h2><a href="../index.html">Home</a></h2>
+<div class="home">
+    <a href="../index.html">Home</a>
+</div>
 <hr/>
 <h1>Font-Family</h1>
 <p class="font-family">Font family allows you to specify the type of font or font stack you want the text to have.</p>
@@ -150,7 +153,30 @@
 <p id="hover">Hovering over this text will add a background color.</p>
 <h2>:active</h2>
 <p>Clicking this button will change the background color.<input type="button" id="active" value="Click this button"></p>
-</body>
 <h2>:focus</h2>
 <p>When this textbox has focus, the background color will change. <input type="text" id="focus"/></p>
+<hr>
+<h2>Attribute Selectors</h2>
+<p>There are other selectors that you can create rules with that apply to elements that have an attribute and a specific value.</p>
+<ul>
+    <li>Existence (targets all X elements with an attribute called XXXX):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[] -> Ex: element[attribute] -> p[class]</b></pre>
+    </li>
+    <li>Equality (targets all X elements with an attribute called XXXX that has a value of XXXXXX):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[=] -> Ex: element[attribute="value"] -> p[class="animal"]</b></pre>
+    </li>
+    <li>Space (targets all X elements with an attribute called XXXX that has a value of XXXXXX in a space-separated list of words):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[~=] -> Ex: element[attribute~="value"] -> p[class~="animal"]</b></pre>
+    </li>
+    <li>Prefix (targets all X elements with an attribute called XXXX that has a value that starts with a specific string XXXXXX):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[^=] -> Ex: element[attribute^="value"] -> p[class^="ani"]</b></pre>
+    </li>
+    <li>Substring (targets all X elements with an attribute called XXXX that has a value that contains substring XXXXXX):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[*=] -> Ex: element[attribute*="value"] -> p[class*="nim"]</b></pre>
+    </li>
+    <li>Suffix (targets all X elements with an attribute called XXXX that has a value that ends with XXXXXX):
+        <pre style="padding: 2em 2em 2em 5em; color: red;"><b>[$=] -> Ex: element[attribute$="value"] -> p[class$="al"]</b></pre>
+    </li>
+</ul>
+</body>
 </html>

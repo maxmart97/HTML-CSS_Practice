@@ -23,10 +23,13 @@
         var params = { mp3: "../miscellaneous/test-audio.mp3" };
         swfobject.embedSWF("../miscellaneous/player_mp3_1.0.0.swf", "music-player", "200", "20", "8.0.0", flashvars, params);
     </script>
+    <link rel="stylesheet" href="../css/home-button.css" type="text/css">
 </head>
 <body>
     <h1 style="color:violet"><b>FLASH, VIDEO, AND AUDIO</b></h1>
-    <h2><a href="../index.html">Home</a></h2>
+    <div class="home">
+        <a href="../index.html">Home</a>
+    </div>
     <hr />
 
     <h1>Flash Movie (.swf)</h1>
@@ -74,7 +77,5 @@
         <source src="../miscellaneous/test-audio.mp3" />
         <p>This text appears if the audio does not work.</p>
     </audio>
-    <hr />
-    <h2><a href="../index.html">Home</a></h2>
 </body>
 </html>
