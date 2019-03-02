@@ -1,14 +1,36 @@
-.home, .home > a {
+.home {
     width: 100px;
     height: 40px;
     position: fixed;
     top: 0;
     right: 0;
-    padding: 10px 0 0 0;
+    padding-top: 10px;
     text-align: center;
     background-color: darkgray;
-    text-decoration: none;
-    color: blue;
     font-weight: bolder;
     font-size: x-large;
+}
+
+.home a {
+    text-decoration: none;
+    color: blue;
+}
+
+.nav {
+    width: 200px;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    text-align: left;
+    border: 2px solid green;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+.nav a:hover {
+    font-weight: bolder;
+    color: green;
 }

@@ -11,8 +11,29 @@
 <div class="home">
     <a href="../index.html">Home</a>
 </div>
+<div class="nav">
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#h1-wh">Width and Height</a></li>
+        <li><a href="#h1-mmwh">Min/Max-Width and Min/Max-Height</a></li>
+        <li><a href="#h1-oflo">Overflow</a></li>
+        <li><a href="#h1-bw">Border-Width</a></li>
+        <li><a href="#h1-bs">Border-Style</a></li>
+        <li><a href="#h1-bc">Border-Color</a></li>
+        <li><a href="#h1-bshrt">Border Shorthand</a></li>
+        <li><a href="#h1-pad">Padding</a></li>
+        <li><a href="#h1-marg">Margin</a></li>
+        <li><a href="#h1-cc">Centering Content</a></li>
+        <li><a href="#h1-ie6">IE6 Box Model</a></li>
+        <li><a href="#h1-disp">Display</a></li>
+        <li><a href="#h1-vis">Visibility</a></li>
+        <li><a href="#h1-bi">CSS3: Border-Image</a></li>
+        <li><a href="#h1-bshad">CSS3: Box-Shadow</a></li>
+        <li><a href="#h1-brad">CSS3: Border-Radius</a></li>
+    </ul>
+</div>
 <hr/>
-<h1>Width and Height</h1>
+<h1 id="h1-wh">Width and Height</h1>
 <div id="wh" class="b m">
     <p id="whnorm">The width and height of this paragraph have not been set.</p>
     <p id="whpx">The width and height of this paragraph have been set using pixels.</p>
@@ -21,11 +42,11 @@
     <p><= This is a div element</p>
 </div>
 <hr>
-<h1>Min/Max-Width and Min/Max-Height</h1>
+<h1 id="h1-mmwh">Min/Max-Width and Min/Max-Height</h1>
 <p id="mmwh" class="b m">This paragraph has a minimum and maximum value width and height. If you try to shrink or enlarge the browser,
     the box will not shrink or grow past certain points. You can specify these values in px, em, or %.</p>
 <hr>
-<h1>Overflow</h1>
+<h1 id="h1-oflo">Overflow</h1>
 <p id="oflo" class="b m">Use the overflow property to make content overflowing content hidden or scrollable (values).
     Use the overflow property to make content overflowing content hidden or scrollable (values).
     Use the overflow property to make content overflowing content hidden or scrollable (values).
@@ -33,7 +54,7 @@
     Use the overflow property to make content overflowing content hidden or scrollable (values).
     Use the overflow property to make content overflowing content hidden or scrollable (values).</p>
 <hr>
-<h1>Border-Width</h1>
+<h1 id="h1-bw">Border-Width</h1>
 <ul class="b bw m">
     <li>There are multiple ways to do border width:</li>
     <li>border-width: px</li>
@@ -44,26 +65,26 @@
     <li>This unordered list uses <b>border-width: px px px px</b></li>
 </ul>
 <hr>
-<h1>Border-Style</h1>
+<h1 id="h1-bs">Border-Style</h1>
 <p class="b bs m">The border style can a lot of different things: solid, dotted, dashed,
     double, groove, ridge, inset, outset, hidden, and none.<br>It can also be specified
     by using the <b>border-[top, left, right, bottom]-style</b> property.</p>
 <hr>
-<h1>Border-Color</h1>
+<h1 id="h1-bc">Border-Color</h1>
 <p class="b bc m">The border-style can be changed to any color using any of the ways of choosing color.
     The border-style can also be specified using <b>border-[top, left, right, bottom]-color</b> or
     using <b>border: color color color color</b>.</p>
 <hr>
-<h1>Border Shorthand</h1>
+<h1 id="h1-bshrt">Border Shorthand</h1>
 <p class="b bshrt m">The easiest way to create a border is using shorthand - <b>border: px style color</b>.</p>
 <hr>
-<h1>Padding</h1>
+<h1 id="h1-pad">Padding</h1>
 <p class="b p1 m">Padding makes text closer or farther away from the border. It is usually specified in pixels.
     Padding can also be specified using <b>padding-[top, right, bottom, left]</b> or using <b>padding: px px px px</b>.</p>
 <p class="b p2 m">Padding makes text closer or farther away from the border. It is usually specified in pixels.
     Padding can also be specified using <b>padding-[top, right, bottom, left]</b> or using <b>padding: px px px px</b>.</p>
 <hr>
-<h1>Margin</h1>
+<h1 id="h1-marg">Margin</h1>
 <p class="b m1">Margin controls the gaps between boxes. Specfied in px, em, or %. If width is specified, margin is added
     to the width of the box. If one box sits on top of another, larger of two paddings will be used. Can be specified
     using <b>margin-[top, right, bottom, left], margin: px px px px</b>, or <b>margin px(top/bottom) px(left/right)</b>.</p>
@@ -71,7 +92,7 @@
     to the width of the box. If one box sits on top of another, larger of two paddings will be used. Can be specified
     using <b>margin-[top, right, bottom, left], margin: px px px px</b>, or <b>margin px(top/bottom) px(left/right)</b>.</p>
 <hr>
-<h1>Centering  Content</h1>
+<h1 id="h1-cc">Centering  Content</h1>
 <div id="div1">
     <div id="div2">
         <div id="div3">
@@ -82,10 +103,10 @@
     </div>
 </div>
 <hr>
-<h1>IE6 Box Model</h1>
+<h1 id="h1-ie6">IE6 Box Model</h1>
 <p class="b m">Beware: IE6 includes padding and margin with width of box while newer browsers add padding and margin on top of width of box.</p>
 <hr>
-<h1>Display</h1>
+<h1 id="h1-disp">Display</h1>
 <p class="b m">The display property allows you to change inline elements to block element and block elements to inline elements.
     It also allows you to change elements to inline-block or hide elements on a page.</p>
 <ul class="b m ul-inline">
@@ -95,10 +116,31 @@
     <li class="inline">4</li>
 </ul>
 <hr>
-<h1>Visibility</h1>
+<h1 id="h1-vis">Visibility</h1>
 <p class="b m">You can hide <span id="v">text</span> in your page by using the <b>visibility</b> property.
-    To hide, use <b>hidden as the value</b>.</p>
+    To hide, use <b>hidden</b> as the value.</p>
 <hr>
-<h1>CSS3: Border-Image</h1>
+<h1 id="h1-bi">CSS3: Border-Image</h1>
+<div class="m" id="bimg">
+    <p  style="text-align: left; padding: 10px 50px;">A border image can be added to make custom borders. A border-width and border-style must be specified
+        before a border-image will appear. The property requires 3 pieces of information:</p>
+    <ol style="text-align: left; padding: 10px 50px">
+        <li>The url of the image: url("path/")</li>
+        <li>Where to slice the image: # # # # or %</li>
+        <li>What to do with the straight edges: [stretch, repeat, round]</li>
+    </ol>
+</div>
+<hr>
+<h1 id="h1-bshad">CSS3: Box-Shadow</h1>
+<p class="b m bshad">This property allows you to add a drop shadow around a box. It takes in: px px px px color. The px
+    specification is the horizonal offset, vertical offset, blur distance, and spread of shadow. Horizontal and vertical
+    offset must be specified. Inset can be placed at the beginning to create and inner-shadow.</p>
+<hr>
+<h1 id="h1-brad">CSS3: Border-Radius</h1>
+<p class="b m brad">The border radius property allows you to round corners. It can be specified
+    using <b>border-[top, bottom]-[right, left]-radius</b>, or using <b>border-radius: px px px px</b>.</p>
+<p class="b m bradw">You can make weird shapes by adjusting the values to weird numbers. To make a circle, make
+    radius the same height as a square box.</p>
+<hr>
 </body>
 </html>
