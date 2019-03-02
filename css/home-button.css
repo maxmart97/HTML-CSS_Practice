@@ -11,7 +11,4 @@
     color: blue;
     font-weight: bolder;
     font-size: x-large;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
 }
